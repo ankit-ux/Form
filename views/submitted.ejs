@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Submitted Information</title>
+    <link rel="stylesheet" type="text/css" href="/css/style2.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <h1 class="submitted-heading">Submitted Information</h1>
+    <ul class="submitted-list">
+        <li><strong>First Name:</strong> <%= firstName %></li>
+        <li><strong>Last Name:</strong> <%= lastName %></li>
+        <li><strong>E-Mail:</strong> <%= email %></li>
+        <li><strong>Country:</strong> <%= country %></li>
+        <li><strong>State:</strong> <%= state %></li>
+        <li><strong>City:</strong> <%= city %></li>
+        <li><strong>Gender:</strong> <%= gender %></li>
+        <li><strong>Date of Birth:</strong> <%= dob %></li>
+        <li><strong>Age:</strong> <%= age %></li>
+    </ul>
+    
+    <!-- Final Submit Button -->
+    <form action="/users" method="post" class="final-submit-form">
+        <input type="hidden" name="firstName" value="<%= firstName %>">
+        <input type="hidden" name="lastName" value="<%= lastName %>">
+        <input type="hidden" name="email" value="<%= email %>">
+        <input type="hidden" name="country" value="<%= country %>">
+        <input type="hidden" name="state" value="<%= state %>">
+        <input type="hidden" name="city" value="<%= city %>">
+        <input type="hidden" name="gender" value="<%= gender %>">
+        <input type="hidden" name="dob" value="<%= dob %>">
+        <input type="hidden" name="age" value="<%= age %>">
+        <input type="submit" value="Submit" class="final-submit-button">
+    </form>
+    
+
+</body>
+
+</html>

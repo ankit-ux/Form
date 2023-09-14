@@ -1,0 +1,72 @@
+/* CSS for Registration Form */
+.container {
+    margin-top: 80px;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 80px;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+.form-submit {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Optional: Add some spacing around the form */
+.registration-form {
+    margin-top: 30px;
+}
+
+/* Optional: Style error messages (if any) */
+.error-message {
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Optional: Style success messages (if any) */
+.success-message {
+    color: #4caf50;
+    font-size: 14px;
+    margin-top: 5px;
+}
